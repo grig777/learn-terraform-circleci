@@ -92,8 +92,8 @@ jobs:
       - checkout
       - terraform/init:
           path: .
-      # - terraform/validate:
-      #     path: .
+      - terraform/validate:
+          path: .
       - terraform/fmt:
           path: .
       - terraform/plan:

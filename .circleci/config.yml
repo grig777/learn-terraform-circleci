@@ -17,7 +17,6 @@ jobs:
       - terraform/plan:
           path: .
       - terraform/apply:
-          type: approval
           path: .
 workflows:
   single-job-lifecycle:

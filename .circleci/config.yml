@@ -92,14 +92,15 @@ jobs:
       - checkout
       - terraform/init:
           path: .
-#       - terraform/validate:
-#           path: .
-#           workspace: "learn-terraform-circleci"
+      - terraform/validate:
+          path: .
       - terraform/fmt:
           path: .
       - terraform/plan:
           path: .
       - terraform/apply:
+          path: .
+      - terraform/init:
           path: .
       - terraform/destroy:
           path: .

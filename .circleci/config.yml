@@ -94,6 +94,7 @@ jobs:
           path: .
       - terraform/validate:
           path: .
+          workspace: "learn-terraform-circleci"
       - terraform/fmt:
           path: .
       - terraform/plan:

@@ -4,7 +4,7 @@ terraform {
     organization = "publicsq-test1234"
 
     workspaces {
-      prefix = "default"
+      name = "learn-terraform-circleci"
     }
   }
 

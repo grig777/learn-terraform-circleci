@@ -85,7 +85,9 @@ orbs:
   terraform: circleci/terraform@3.1
 jobs:
   single-job-lifecycle:
-    executor: terraform/default
+    executor: 
+      name: terraform/default
+      tag: "1.1.0"
     steps:
       - checkout
       - terraform/install:

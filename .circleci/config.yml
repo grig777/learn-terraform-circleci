@@ -19,9 +19,6 @@ jobs:
       - terraform/apply:
           type: approval
           path: .
-          filters:
-            branches:
-              only: main
 workflows:
   single-job-lifecycle:
     jobs:

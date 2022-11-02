@@ -93,6 +93,7 @@ jobs:
       - terraform/init:
           path: .
       - terraform/validate:
+          workspace: "tesr"
           path: .
       - terraform/fmt:
           path: .

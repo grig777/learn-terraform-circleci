@@ -5,10 +5,9 @@ terraform {
 
     workspaces {
       name = "learn-terraform-circleci"
-      prefix = "my-infra"
     }
   }
-  
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"

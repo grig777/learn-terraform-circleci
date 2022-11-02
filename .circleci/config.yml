@@ -90,16 +90,16 @@ jobs:
       tag: "1.2.0"
     steps:
       - checkout
-      - terraform/init:
-          path: .
-      - terraform/validate:
-          path: .
-      - terraform/fmt:
-          path: .
-      - terraform/plan:
-          path: .
-      - terraform/apply:
-          path: .
+      # - terraform/init:
+      #     path: .
+      # - terraform/validate:
+      #     path: .
+      # - terraform/fmt:
+      #     path: .
+      # - terraform/plan:
+      #     path: .
+      # - terraform/apply:
+      #     path: .
       - terraform/init:
           path: .
       - terraform/destroy:

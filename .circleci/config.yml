@@ -15,10 +15,8 @@ jobs:
       - terraform/fmt:
           path: .
       - terraform/plan:
-          persist-workspace: true
           path: .
       - terraform/apply:
-          attach-workspace: true
           type: approval
           path: .
           filters:
